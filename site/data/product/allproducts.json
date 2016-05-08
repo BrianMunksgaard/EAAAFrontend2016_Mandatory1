@@ -1,0 +1,227 @@
+[
+    {
+        "productNumber": "Prd001",
+        "productName": "Claw Hammer",
+        "price": 10.00,
+        "productImage": "data/product/img/spin_prod_206237601.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber":"Prd002",
+        "productName":"Fiberglass Claw Hammer",
+        "price": 10.78,
+        "productImage": "data/product/img/spin_prod_246591001.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber":"Prd003",
+        "productName":"Screwdriver Set",
+        "price": 10.78,
+        "productImage": "data/product/img/prod_1349948612.jpg",
+        "category": "Screwdrivers"
+    },
+    {
+        "productNumber":"Prd004",
+        "productName":"Craftman Pliers Set",
+        "price": 10.78,
+        "productImage": "data/product/img/spin_prod_206446201.jpg",
+        "category": "Pliers"
+    },
+    {
+        "productNumber":"Prd005",
+        "productName":"Bosch Jig Saw",
+        "price": 10.78,
+        "productImage": "data/product/img/prod_1838894207.jpg",
+        "category": "Jig Saws"
+    },
+    {
+        "productNumber":"Prd006",
+        "productName":"Porter-Cable Orbital Jig Saw",
+        "price": 10.78,
+        "productImage": "data/product/img/prod_2218128628.jpg",
+        "category": "Jig Saws"
+    },
+    {
+        "productNumber":"Prd007",
+        "productName":"Craftman Hacksaw",
+        "price": 15.49,
+        "productImage": "data/product/img/spin_prod_206704001.jpg",
+        "category": "Hand Saws"
+    },
+    {
+        "productNumber":"Prd008",
+        "productName":"Craftman Hacksaw",
+        "price": 24.99,
+        "productImage": "data/product/img/spin_prod_206704201.jpg",
+        "category": "Hand Saws"
+    },
+    {
+        "productNumber":"Prd009",
+        "productName":"Craftman Carpenter Handsaw",
+        "price": 19.99,
+        "productImage": "data/product/img/spin_prod_213685701.jpg",
+        "category": "Hand Saws"
+    },
+    {
+        "productNumber":"Prd010",
+        "productName":"Craftman Adjustable Pliers Set",
+        "price": 17.09,
+        "productImage": "data/product/img/spin_prod_215899901.jpg",
+        "category": "Pliers"
+    },
+    {
+        "productNumber":"Prd011",
+        "productName":"Black & Decker 9.6v Drill",
+        "price": 39.39,
+        "productImage": "data/product/img/spin_prod_256831601.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber":"Prd012",
+        "productName":"Craftsman Jig Saw",
+        "price": 25.75,
+        "productImage": "data/product/img/spin_prod_683786801.jpg",
+        "category": "Jig Saws"
+    },
+    {
+        "productNumber":"Prd013",
+        "productName":"Super Duper Screwdriver",
+        "price": 10.78,
+        "productImage": "data/product/img/spin_prod_727114901.jpg",
+        "category": "Screwdrivers"
+    },
+    {
+        "productNumber":"Prd014",
+        "productName":"Craftsman Brushless Drill",
+        "price": 163.19,
+        "productImage": "data/product/img/spin_prod_893679712.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber": "Prd015",
+        "productName": "Craftsman Claw Hammer",
+        "price": 17.09,
+        "productImage": "data/product/img/spin_prod_947241512.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber": "Prd016",
+        "productName": "Craftsman Plastic Tip Hammer",
+        "price": 12.34,
+        "productImage": "data/product/img/spin_prod_947241712.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber": "Prd017",
+        "productName": "Hand-Drilling Hammer",
+        "price": 15.19,
+        "productImage": "data/product/img/spin_prod_947242012.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber":"Prd018",
+        "productName":"DeWalt 18v Drill",
+        "price": 39.39,
+        "productImage": "data/product/img/spin_prod_949888012.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber": "Prd019",
+        "productName": "Hand Driller Hammer",
+        "price": 16.50,
+        "productImage": "data/product/img/spin_prod_951021412.jpg",
+        "category": "Hammers"
+    },
+    {
+        "productNumber": "Prd020",
+        "productName": "DeWalt Jig Saw",
+        "price": 21.25,
+        "productImage": "data/product/img/spin_prod_951050912.jpg",
+        "category": "Jig Saws"
+    },
+    {
+        "productNumber":"Prd021",
+        "productName":"Black & Decker 20v Drill",
+        "price": 68.50,
+        "productImage": "data/product/img/spin_prod_949888012.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber":"Prd022",
+        "productName":"Craftsman 4.5in Cutting Plier",
+        "price": 11.99,
+        "productImage": "data/product/img/spin_prod_1047587912.jpg",
+        "category": "Pliers"
+    },
+    {
+        "productNumber":"Prd023",
+        "productName":"Some Wrenches",
+        "price": 31.55,
+        "productImage": "data/product/img/wrenches-qm-$cq_width_160$.jpg",
+        "category": "Wrenches"
+    },
+    {
+        "productNumber":"Prd024",
+        "productName":"Craftsman Miter Box",
+        "price": 20.89,
+        "productImage": "data/product/img/spin_prod_1185313012.jpg",
+        "category": "Hand Saws"
+    },
+    {
+        "productNumber":"Prd025",
+        "productName":"Bosch Drill 18v",
+        "price": 89.89,
+        "productImage": "data/product/img/spin_prod_1190296112.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber":"Prd026",
+        "productName":"Some Cutting Plier",
+        "price": 5.99,
+        "productImage": "data/product/img/spin_prod_1123651112.jpg",
+        "category": "Pliers"
+    },
+    {
+        "productNumber":"Prd027",
+        "productName":"Another Cutting Plier",
+        "price": 8.99,
+        "productImage": "data/product/img/spin_prod_1123612112.jpg",
+        "category": "Pliers"
+    },
+    {
+        "productNumber":"Prd028",
+        "productName":"Craftsman Drilling Machine 1.21gw",
+        "price": 1200.99,
+        "productImage": "data/product/img/spin_prod_1116505712.jpg",
+        "category": "Drills"
+    },
+    {
+        "productNumber":"Prd029",
+        "productName":"Craftsman 11pc Torx Driver Set",
+        "price": 40.96,
+        "productImage": "data/product/img/spin_prod_229036601.jpg",
+        "category": "Screwdrivers"
+    },
+    {
+        "productNumber":"Prd030",
+        "productName":"Magnetic Screwdriver with Bit Storage",
+        "price": 21.96,
+        "productImage": "data/product/img/spin_prod_1059790412.jpg",
+        "category": "Screwdrivers"
+    },
+    {
+        "productNumber":"Prd031",
+        "productName":"6 in 1 Led Screwdriver",
+        "price": 21.96,
+        "productImage": "data/product/img/prod_1395129312.jpg",
+        "category": "Screwdrivers"
+    },
+    {
+        "productNumber":"Prd032",
+        "productName":"Yet Another Screwdriver",
+        "price": 21.96,
+        "productImage": "data/product/img/prod_1789256712.jpg",
+        "category": "Screwdrivers"
+    }
+]
+

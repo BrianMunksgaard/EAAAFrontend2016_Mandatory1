@@ -1,0 +1,582 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+** Default colors.
+*/
+/*
+* Generel elements.
+*/
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+body {
+  background-color: #DCDCDC;
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%; }
+
+body#homepage a#homenav,
+body#productspage a#productsnav,
+body#orderspage a#ordersnav,
+body#deliverypage a#deliverynav {
+  background-color: #146884; }
+
+nav ul {
+  line-height: 3em; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  background-color: #3D555D;
+  padding: 0.5em;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+  nav a:visited {
+    background-color: #3D555D; }
+  nav a:hover {
+    background-color: #03B1EA; }
+
+/*
+* UI classes.
+*/
+.maincontainer {
+  width: 1024px;
+  margin: 0 auto 0 auto; }
+
+.header {
+  background-color: #373C3E;
+  height: 10em; }
+
+.footer {
+  width: 100%;
+  height: 5em; }
+  .footer p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.prinav {
+  height: 10em;
+  float: right;
+  padding-top: 3.5em;
+  padding-right: 1em; }
+
+.navigation {
+  margin-bottom: 1em;
+  height: 3em; }
+
+.navigation .paging {
+  float: right; }
+
+.logocontainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pull-right {
+  float: right;
+  display: block; }
+
+.pull-left {
+  float: left;
+  display: block; }
+
+.visible-phone-block, .visible-tablet-block, .visible-desktop-block, .visible {
+  display: block; }
+
+.hidden-phone-block, .hidden-tablet-block, .hidden-desktop-block, .hidden {
+  display: none; }
+
+.visible-nav-phone, .visible-nav-tablet, .hidden-nav-desktop {
+  display: inline-block; }
+
+.hidden-nav-phone, .hidden-nav-tablet, .hidden-nav-desktop {
+  display: none; }
+
+.product {
+  width: 100%;
+  height: 25em;
+  background-color: white;
+  float: left;
+  text-align: center; }
+
+.product a {
+  background-color: #146884;
+  padding: 1em;
+  margin: 0.3em;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  display: inline-block; }
+  .product a:hover {
+    background-color: #03B1EA; }
+
+.productimage {
+  height: 10em;
+  width: 10em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.product .productprice {
+  color: #03B1EA; }
+
+.product p {
+  margin: 0.5em;
+  font-size: 1.6em; }
+
+.product .productfooter {
+  font-size: 1em; }
+
+/*
+** Grid.
+*/
+.row {
+  clear: both; }
+
+.col {
+  height: inherit;
+  float: left;
+  display: block;
+  box-sizing: border-box; }
+
+/*
+** Specific items.
+*/
+#prilogo {
+  background-image: url("http://dummyimage.com/200x100/3D555D/ffffff&text=LOGO");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }
+
+#seclogo {
+  background-image: url("http://dummyimage.com/400x100/373C3E/ffffff&text=Some+other+logo");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }
+
+/*
+* Phone.
+*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* Extra small device */
+  .col-phone-1 {
+    width: 6.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-1 {
+    width: 8.33333%;
+    margin: 0; }
+  .col-phone-1:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-2 {
+    width: 15%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-2 {
+    width: 16.66667%;
+    margin: 0; }
+  .col-phone-2:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-3 {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-3 {
+    width: 25%;
+    margin: 0; }
+  .col-phone-3:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-4 {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-4 {
+    width: 33.33333%;
+    margin: 0; }
+  .col-phone-4:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-5 {
+    width: 40.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-5 {
+    width: 41.66667%;
+    margin: 0; }
+  .col-phone-5:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-6 {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-6 {
+    width: 50%;
+    margin: 0; }
+  .col-phone-6:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-7 {
+    width: 57.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-7 {
+    width: 58.33333%;
+    margin: 0; }
+  .col-phone-7:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-8 {
+    width: 66%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-8 {
+    width: 66.66667%;
+    margin: 0; }
+  .col-phone-8:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-9 {
+    width: 74.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-9 {
+    width: 75%;
+    margin: 0; }
+  .col-phone-9:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-10 {
+    width: 83%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-10 {
+    width: 83.33333%;
+    margin: 0; }
+  .col-phone-10:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-11 {
+    width: 91.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-11 {
+    width: 91.66667%;
+    margin: 0; }
+  .col-phone-11:nth-child(1n) {
+    margin-right: 0; }
+  .col-phone-12 {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-phone-12 {
+    width: 100%;
+    margin: 0; }
+  .col-phone-12:nth-child(1n) {
+    margin-right: 0; }
+  .maincontainer {
+    width: 100%; }
+  .visible-phone-block {
+    display: block; }
+  .visible-tablet-block, .visible-desktop-block {
+    display: none; }
+  .visible-nav-phone {
+    display: block; }
+  .visible-nav-tablet, .hidden-nav-desktop {
+    display: none; } }
+
+/*
+* Tablet.
+*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Medium device */
+  .col-tablet-1 {
+    width: 6.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-1 {
+    width: 8.33333%;
+    margin: 0; }
+  .col-tablet-1:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-2 {
+    width: 15%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-2 {
+    width: 16.66667%;
+    margin: 0; }
+  .col-tablet-2:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-3 {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-3 {
+    width: 25%;
+    margin: 0; }
+  .col-tablet-3:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-4 {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-4 {
+    width: 33.33333%;
+    margin: 0; }
+  .col-tablet-4:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-5 {
+    width: 40.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-5 {
+    width: 41.66667%;
+    margin: 0; }
+  .col-tablet-5:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-6 {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-6 {
+    width: 50%;
+    margin: 0; }
+  .col-tablet-6:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-7 {
+    width: 57.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-7 {
+    width: 58.33333%;
+    margin: 0; }
+  .col-tablet-7:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-8 {
+    width: 66%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-8 {
+    width: 66.66667%;
+    margin: 0; }
+  .col-tablet-8:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-9 {
+    width: 74.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-9 {
+    width: 75%;
+    margin: 0; }
+  .col-tablet-9:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-10 {
+    width: 83%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-10 {
+    width: 83.33333%;
+    margin: 0; }
+  .col-tablet-10:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-11 {
+    width: 91.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-11 {
+    width: 91.66667%;
+    margin: 0; }
+  .col-tablet-11:nth-child(2n) {
+    margin-right: 0; }
+  .col-tablet-12 {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-tablet-12 {
+    width: 100%;
+    margin: 0; }
+  .col-tablet-12:nth-child(2n) {
+    margin-right: 0; }
+  .maincontainer {
+    width: 100%; }
+  .visible-phone-block {
+    display: none; }
+  .visible-tablet-block, .visible-desktop-block {
+    display: block; }
+  .visible-nav-phone {
+    display: none; }
+  .visible-nav-tablet, .hidden-nav-desktop {
+    display: inline-block; } }
+
+/*
+* Desktop.
+*/
+@media screen and (min-width: 1024px) {
+  .col-desktop-1 {
+    width: 6.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-1 {
+    width: 8.33333%;
+    margin: 0; }
+  .col-desktop-1:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-2 {
+    width: 15%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-2 {
+    width: 16.66667%;
+    margin: 0; }
+  .col-desktop-2:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-3 {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-3 {
+    width: 25%;
+    margin: 0; }
+  .col-desktop-3:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-4 {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-4 {
+    width: 33.33333%;
+    margin: 0; }
+  .col-desktop-4:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-5 {
+    width: 40.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-5 {
+    width: 41.66667%;
+    margin: 0; }
+  .col-desktop-5:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-6 {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-6 {
+    width: 50%;
+    margin: 0; }
+  .col-desktop-6:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-7 {
+    width: 57.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-7 {
+    width: 58.33333%;
+    margin: 0; }
+  .col-desktop-7:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-8 {
+    width: 66%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-8 {
+    width: 66.66667%;
+    margin: 0; }
+  .col-desktop-8:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-9 {
+    width: 74.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-9 {
+    width: 75%;
+    margin: 0; }
+  .col-desktop-9:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-10 {
+    width: 83%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-10 {
+    width: 83.33333%;
+    margin: 0; }
+  .col-desktop-10:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-11 {
+    width: 91.5%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-11 {
+    width: 91.66667%;
+    margin: 0; }
+  .col-desktop-11:nth-child(4n) {
+    margin-right: 0; }
+  .col-desktop-12 {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+  .col-ng-desktop-12 {
+    width: 100%;
+    margin: 0; }
+  .col-desktop-12:nth-child(4n) {
+    margin-right: 0; }
+  .maincontainer {
+    width: 1024px; }
+  .visible-phone-block, .visible-tablet-block {
+    display: none; }
+  .visible-desktop-block {
+    display: block; }
+  .visible-nav-phone {
+    display: none; }
+  .visible-nav-tablet, .hidden-nav-desktop {
+    display: inline-block; } }

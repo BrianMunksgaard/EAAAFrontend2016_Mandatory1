@@ -1,0 +1,205 @@
+/*
+* Generel elements.
+*
+*/
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #146884;
+    width: 100%;
+    height: 100px;
+}
+
+header, main, section, p, button {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav, nav ul {
+    line-height: 100px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/*
+* UI classes.
+*/
+.logoimage {
+    content: url("http://dummyimage.com/300x100/146884/ffffff&text=LOGO");
+}
+
+.pull-right {
+    float: right;
+    display: block;
+}
+
+.pull-left {
+    float:left;
+    display: block;
+}
+
+.visible-xs-block, .visible-sm-block, .visible-md-block, .visible-lg-block {
+    display: block;
+}
+
+.hidden-xs-block, .hidden-sm-block, .hidden-md-block, .hidden-lg-block {
+    display: none; 
+}
+
+.backgroundimage {
+    background-image: url("http://dummyimage.com/100x100/146884/ffffff&text=LOGO");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.product {
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-width: thick;
+    margin: 0 1% 1vh 0; /* top, right, bottom, left */
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.productimage {
+    height: 175px;
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product .productprice {
+    color: red;
+}
+
+.product p {
+    margin: 0.5em;
+}
+
+/*
+* Extra small device.
+*/
+@media screen and (min-width: 0px) and (max-width: 767px) { /* Extra small device */
+
+    /*
+    header {
+        background-color: deepskyblue;
+    }*/
+ 
+    .visible-xs-block, .visible-sm-block {
+        display: block;
+    }
+    
+    .visible-md-block, .visible-lg-block {
+        display: none;
+    }
+    
+    .backgroundimage {
+        background-image: url("http://dummyimage.com/100x100/146884/ffffff&text=LOGO");
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .product {
+        width: 100%;
+        /*margin-right: 0px;*/
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { /* Small device */
+
+    /*
+    header {
+        background-color: black;
+    }*/
+    
+   .visible-xs-block, .visible-sm-block {
+        display: block;
+    }
+    
+    .visible-md-block, .visible-lg-block {
+        display: none;
+    }
+    
+    .backgroundimage {
+        background-image: url("http://dummyimage.com/100x100/146884/ffffff&text=LOGO");
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .product {
+        width: calc(99% / 2);
+    }
+    
+    .product:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+/*
+* Small device.
+*/
+@media screen and (min-width: 992px) and (max-width: 1199px) { /* Medium device */
+
+    /*
+    header {
+        background-color: orange;
+    }*/
+    
+   .visible-xs-block, .visible-sm-block {
+        display: none;
+    }
+    
+    .visible-md-block, .visible-lg-block {
+        display: block;
+    }
+    
+    .product {
+        width: calc(99% / 2);
+    }
+    
+    .product:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+/*
+* Large device.
+*/
+@media screen and (min-width: 1200px) { /* Large device */
+    /*
+    header {
+        background-color: forestgreen;
+    }*/
+    
+   .visible-xs-block, .visible-sm-block {
+        display: none;
+    }
+    
+    .visible-md-block, .visible-lg-block {
+        display: block;
+    }
+    
+    .product {
+        width: calc(97% / 4);
+    }
+    
+    .product:nth-child(4n) {
+        margin-right: 0px;
+    }
+}

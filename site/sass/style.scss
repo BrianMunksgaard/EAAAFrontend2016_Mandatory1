@@ -1,0 +1,341 @@
+@import "_reset.scss";
+
+/*
+** Default colors.
+*/
+$colpribackground: #DCDCDC;
+$colsecbackground: #373C3E;
+
+$gridcolumns: 12;
+$gridgutter: 2%;
+
+$linkcolornormal: #3D555D;
+$linkcolorhover: #03B1EA;
+$linkcoloractive:  #146884;
+
+$colprifont: #000000;
+$colsecfont: #03B1EA;
+
+/*
+* Generel elements.
+*/
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400
+}
+
+body {
+    background-color: $colpribackground;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;//10px; 1em.
+}
+
+// Make page navigation show what is
+// currently selected.
+body#homepage a#homenav,
+body#productspage a#productsnav,
+body#orderspage a#ordersnav,
+body#deliverypage a#deliverynav {
+	background-color: $linkcoloractive;
+}
+
+// Navigation elements.
+nav {
+	ul {
+		line-height: 3em;
+	}
+	
+	li {
+		display: inline-block;
+	}
+	
+	a {
+	    background-color: $linkcolornormal;
+		padding: 0.5em;
+		border-radius: 2px;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.2em;
+
+		&:visited {
+		  background-color: $linkcolornormal;
+		}
+		&:hover {
+		  background-color: $linkcolorhover;
+		}
+	}
+}
+
+/*
+* UI classes.
+*/
+.maincontainer {
+	width: 1024px;
+	margin: 0 auto 0 auto;
+}
+
+.header {
+    background-color: $colsecbackground;
+    height: 10em;
+}
+
+.footer {
+	width: 100%;
+	height: 5em;
+	p {
+		text-align: center;
+    	position: relative;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+
+.prinav {
+	height: 10em;
+	float: right;
+	padding-top: 3.5em;
+	padding-right: 1em;
+}
+
+.navigation {
+    margin-bottom: 1em;
+	height: 3em;
+}
+
+.navigation .paging {
+	float: right;
+}
+
+.logocontainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pull-right {
+    float: right;
+    display: block;
+}
+
+.pull-left {
+    float:left;
+    display: block;
+}
+
+.visible-phone-block, .visible-tablet-block, .visible-desktop-block, .visible {
+    display: block;
+}
+
+.hidden-phone-block, .hidden-tablet-block, .hidden-desktop-block, .hidden {
+    display: none; 
+}
+
+.visible-nav-phone, .visible-nav-tablet, .hidden-nav-desktop {
+	display: inline-block;
+}
+
+.hidden-nav-phone, .hidden-nav-tablet, .hidden-nav-desktop {
+	display: none;
+}
+
+.product {
+	width: 100%;
+    height: 25em;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.product a {
+    background-color: $linkcoloractive;
+    padding: 1em;
+    margin: 0.3em;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+	&:hover {
+      background-color: $linkcolorhover;
+    }
+}
+
+.productimage {
+    height: 10em;
+    width: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product .productprice {
+    color: $colsecfont;
+}
+
+.product p {
+    margin: 0.5em;
+    font-size: 1.6em;
+}
+
+.product .productfooter {
+    font-size: 1em;
+}
+
+/*
+** Grid.
+*/
+.row {
+    clear: both;
+}
+
+// General column properties.
+.col {
+    height: inherit;
+    float:left;
+    display: block;
+    box-sizing: border-box;
+	
+}
+
+// Mixin used to create grid columns. The width of
+// each column is based on the viewport size.
+@mixin grid($type) {
+	$width: 100%;
+    $onecol: $width / $gridcolumns;
+    @for $i from 1 through 12 {
+		.col-#{$type}-#{$i} {
+            width: ($width - ($gridgutter * ($gridcolumns / $i - 1))) * ($i / $gridcolumns);
+			margin-right: $gridgutter;
+			margin-bottom: $gridgutter;
+        }
+		
+		.col-ng-#{$type}-#{$i} {
+			width: $onecol * $i;
+			margin: 0;
+		}
+	
+		@if $type == "phone" {
+			.col-#{$type}-#{$i}:nth-child(1n) {
+				margin-right: 0;
+			}
+		}
+
+		@if  $type == "tablet" {
+			.col-#{$type}-#{$i}:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		@if $type == "desktop" {
+			.col-#{$type}-#{$i}:nth-child(4n) {
+				margin-right: 0;
+			}
+		}
+    }
+}
+
+/*
+** Specific items.
+*/
+#prilogo {
+   	background-image: url("http://dummyimage.com/200x100/3D555D/ffffff&text=LOGO");
+	background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#seclogo {
+    background-image: url("http://dummyimage.com/400x100/373C3E/ffffff&text=Some+other+logo");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+* Phone.
+*/
+@media screen and (min-width: 0px) and (max-width: 767px) { /* Extra small device */
+
+	@include grid('phone');
+	
+	.maincontainer {
+		width: 100%;
+	}
+	
+    .visible-phone-block {
+        display: block;
+    }
+    
+    .visible-tablet-block, .visible-desktop-block {
+        display: none;
+    }
+	
+	.visible-nav-phone {
+		display: block;
+	}
+
+	.visible-nav-tablet, .hidden-nav-desktop {
+		display: none;
+	}
+}
+
+/*
+* Tablet.
+*/
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* Medium device */
+
+	@include grid('tablet');
+	
+	.maincontainer {
+		width: 100%;
+	}
+	
+   .visible-phone-block {
+        display: none;
+    }
+    
+    .visible-tablet-block, .visible-desktop-block {
+        display: block;
+    }
+	
+	.visible-nav-phone {
+		display: none;
+	}
+
+	.visible-nav-tablet, .hidden-nav-desktop {
+		display: inline-block;
+	}
+}
+
+/*
+* Desktop.
+*/
+@media screen and (min-width: 1024px) {
+	
+    @include grid('desktop');
+	
+	.maincontainer {
+		width: 1024px;	
+	}
+	
+	.visible-phone-block, .visible-tablet-block {
+		display: none;
+	}
+
+	.visible-desktop-block {
+		display: block;
+	}
+	
+	.visible-nav-phone {
+		display: none;
+	}
+
+	.visible-nav-tablet, .hidden-nav-desktop {
+		display: inline-block;
+	}
+}
+
